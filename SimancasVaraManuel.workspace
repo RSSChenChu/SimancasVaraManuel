@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="SimancasVaraManuel" Database="" Version="10000"/>
+<CodeLite_Workspace Name="SimancasVaraManuel" Database="" Version="10000">
+  <Project Name="SimancasVaraManuel" Path="SimancasVaraManuel/SimancasVaraManuel.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug">
+      <Environment/>
+      <Project Name="SimancasVaraManuel" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release">
+      <Environment/>
+      <Project Name="SimancasVaraManuel" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
