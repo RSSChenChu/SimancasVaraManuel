@@ -1,0 +1,5 @@
+[{
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\main.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\main.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\main.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }]
