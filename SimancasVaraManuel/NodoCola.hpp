@@ -1,15 +1,16 @@
 #ifndef NODOCOLA_HPP
 #define NODOCOLA_HPP
+#include "Aficionado.hpp"
 #include <iostream>
 
 class NodoCola
 {
 public:
-    NodoCola(int num, NodoCola* sig = NULL);
+    NodoCola(Aficionado a, NodoCola* sig= NULL);
     ~NodoCola();
     
 private:
-    int valor;
+    Aficionado aficionado;
     NodoCola* siguiente;
     friend class Cola;
 

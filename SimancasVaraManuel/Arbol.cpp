@@ -2,6 +2,7 @@
 
 Arbol::Arbol()
 {
+    raiz = nullptr;
 }
 
 Arbol::~Arbol()

@@ -93,6 +93,8 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="Aficionado.cpp"/>
+    <File Name="Aficionado.hpp"/>
     <File Name="Pila.cpp"/>
     <File Name="NodoPila.cpp"/>
     <File Name="NodoLista.cpp"/>

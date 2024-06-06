@@ -1,8 +1,8 @@
 #include "NodoCola.hpp"
 
-NodoCola::NodoCola(int num, NodoCola* sig)
+NodoCola::NodoCola(Aficionado a, NodoCola* sig)
 {
-    valor = num;
+    aficionado = a;
     siguiente = sig;
 }
 
