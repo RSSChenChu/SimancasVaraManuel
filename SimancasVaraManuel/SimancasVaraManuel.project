@@ -93,6 +93,24 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="Pila.cpp"/>
+    <File Name="NodoPila.cpp"/>
+    <File Name="NodoLista.cpp"/>
+    <File Name="NodoCola.cpp"/>
+    <File Name="NodoArbol.cpp"/>
+    <File Name="Lista.cpp"/>
+    <File Name="Gestor.cpp"/>
+    <File Name="Cola.cpp"/>
+    <File Name="Arbol.cpp"/>
+    <File Name="Pila.hpp"/>
+    <File Name="NodoPila.hpp"/>
+    <File Name="NodoLista.hpp"/>
+    <File Name="NodoCola.hpp"/>
+    <File Name="NodoArbol.hpp"/>
+    <File Name="Lista.hpp"/>
+    <File Name="Gestor.hpp"/>
+    <File Name="Cola.hpp"/>
+    <File Name="Arbol.hpp"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

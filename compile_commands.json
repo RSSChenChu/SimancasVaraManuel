@@ -1,5 +1,77 @@
 [{
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Arbol.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Arbol.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Arbol.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Gestor.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Gestor.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Gestor.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Lista.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Lista.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Lista.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoArbol.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoArbol.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoArbol.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoCola.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoCola.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoCola.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoPila.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoPila.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoPila.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoPila.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoPila.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoPila.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Gestor.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Gestor.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Gestor.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Pila.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Pila.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Pila.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Lista.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Lista.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Lista.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Arbol.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Arbol.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Arbol.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Cola.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Cola.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Cola.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
   "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\main.cpp",
   "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
   "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\main.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\main.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoArbol.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoArbol.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoArbol.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoLista.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoLista.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoLista.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoLista.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoLista.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoLista.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Pila.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Pila.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Pila.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Cola.hpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Cola.hpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\Cola.hpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoCola.cpp",
+  "directory": "C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel",
+  "command": "C:/msys64/clang64/bin/clang++.exe -c C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoCola.cpp -o C:\\Users\\msima\\OneDrive\\Documentos\\SimancasVaraManuel\\SimancasVaraManuel\\NodoCola.cpp.o -target x86_64-w64-windows-gnu -IC:\\msys64\\clang64\\include\\c++\\v1 -IC:\\msys64\\clang64\\lib\\clang\\18\\include -IC:\\msys64\\clang64\\include -I. -I.  -gdwarf-2  -O0  -Wall"
  }]
