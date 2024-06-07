@@ -6,7 +6,7 @@ Aficionado::Aficionado()
 
 void Aficionado::setID(int n){
     this->ID = n;
-    if(n < 50){
+    if(n <= 50){
         this->esSocio = true;
     } else{
         this->esSocio = false;

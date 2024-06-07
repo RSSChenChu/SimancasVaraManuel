@@ -1,6 +1,7 @@
 #ifndef COLA_HPP
 #define COLA_HPP
 #include "NodoCola.hpp"
+#include "NodoLista.hpp"
 
 using namespace std;
 
@@ -10,16 +11,18 @@ public:
     
     Cola();
     
-    void insertarAficionado(NodoCola *&, NodoCola *&, Aficionado);
-    void mostrarCola(NodoCola *&);
-    void eliminarCola(NodoCola *&, NodoCola *&);
+    void insertarAficionado(Aficionado);
+    void insertarEnCola(NodoLista *);
+    void mostrarCola();
+    void eliminarCola();
+    NodoCola *getPrimero();
     
     ~Cola();
 
 private:
     
     Aficionado aficionado;
-    NodoCola *siguiente;
+    NodoCola *primero, *ultimo;
 
 };
 

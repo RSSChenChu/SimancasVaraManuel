@@ -1,5 +1,6 @@
 #ifndef PILA_HPP
 #define PILA_HPP
+#include "Aficionado.hpp"
 #include "NodoPila.hpp"
 
 using namespace std;
@@ -9,15 +10,17 @@ class Pila
 public:
     Pila();
     
-    void insertaPila(int, NodoPila *&);
-    void muestraPila(NodoPila *&);
-    void borraPila(NodoPila *&);
+    void insertarPila(int);
+    void mostrarPila();
+    void borrarPila();
+    int getCima();
+    int extraer();
     
     ~Pila();
     
 private:
     int dato;
-    NodoPila *siguiente;
+    NodoPila *cima;
     int numDatos;
 };
 

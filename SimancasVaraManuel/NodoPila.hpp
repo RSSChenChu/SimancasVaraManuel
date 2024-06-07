@@ -12,7 +12,6 @@ private:
     int valor;
     NodoPila* siguiente;
     friend class Pila;
-
 };
 
 #endif // NODOPILA_HPP

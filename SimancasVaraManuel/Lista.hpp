@@ -11,15 +11,16 @@ public:
     
     Lista();
     
-    void annadirAficionado(NodoLista *&, Aficionado);
-    void mostrarLista(NodoLista *);
-    void eliminarLista(NodoLista *&);
+    void annadirAficionado(Aficionado);
+    void mostrarLista();
+    void eliminarLista();
+    NodoLista *getLst();
     
     ~Lista();
 
 private:
-    int dato;
-    NodoLista *siguiente;
+    Aficionado aficionado;
+    NodoLista *lst;
 };
 
 #endif // LISTA_HPP

@@ -1,56 +1,36 @@
 #include <stdio.h>
 #include <iostream>
+#include "Gestor.hpp"
+
 using namespace std;
+
 int main(int argc, char** argv)
 {
-    // Gestor gestor;
+    Gestor gestor;
     char opcion;
+    int dato;
     do {
         cout << "\n\t--------------------------------------------------------------"
                 "--------\n";
-        cout << "\tPedidos en la pila -> " << 0 /*gestor.PedidosEnPila()*/
-             << "\n\tPedidos en las colas:\n \t\tSala A-> " << 0 /*gestor.PedidosEnSalaA() */ << "\tSala B-> "
-             << 0 /*gestor.PedidosEnSalaB() */ << "\tSala C-> " << 0 /*gestor.PedidosEnSalaC() */ << "\tSala D-> "
-             << 0 /*gestor.PedidosEnSalaD()*/
-             << " \n\tPedidos en las listas:\n \t\tEstandar-> "
-             << 0 /*gestor.PedidosEnListaEstandar()*/ << "\tUrgentes-> " << 0 /*gestor.PedidosEnListaUrgentes()*/
-             << "\n\tPedidos en el arbol -> " << 0                            /*gestor.PedidosEnArbol()*/
-             << "\n";
-        cout << "\t----------------------------------------------------------------"
-                "------\n\n";
-        cout << "\tA. Generar 12 Pedidos de forma aleatoria y almacenarlos en la "
-                "Pila.\n";
-        cout << "\tB. Consultar todos los Pedidos generados en la Pila (pendientes "
-                "de entrar en las salas).\n";
-        cout << "\tC. Borrar los Pedidos generados en la pila.\n";
-        cout << "\tD. Simular llegada de los Pedidos en las colas.\n";
-        cout << "\tE. Consultar los Pedidos de las salas A y B.\n";
-        cout << "\tF. Consultar los Pedidos de las salas C y D.\n";
-        cout << "\tG. Borrar los todos los Pedidos de las salas.\n";
-        cout << "\tH. Simular la entrada de los Pedidos a las listas.\n";
-        cout << "\tI. Mostrar los Pedidos que hay en la lista Estandar.\n";
-        cout << "\tJ. Mostrar los Pedidos que hay en la lista Urgentes.\n";
-        cout << "\tK. Buscar en las listas el Pedido Estandar de mayor prioridad y "
-                "el pedido Urgente con menor prioridad "
-                "prioridad.\n";
-        cout << "\tL. Reiniciar el programa.\n";
-        cout << "\tM. Crear y dibujar el ABB en consola.\n";
-        cout << "\tN. Mostrar los datos de todos los Pedidos Estandar ordenados "
-                "por numero de seguimiento en orden ascendente.\n";
-        cout << "\tO. Mostrar los datos de todos los Pedidos Urgentes ordenados "
-                "por numero de seguimiento en orden ascendente.\n";
-        cout << "\tP. Mostrar los datos de todos los Pedidos recorriendo el arbol "
-                "en inorden.\n";
-        cout << "\tQ. Buscar en el ABB el Pedido Estándar con el numero de "
-                "seguimiento mas alto y mas bajo, asi como los Pedidos Urgentes "
-                "con el numero de ID mas alto y mas bajo.\n";
-        cout << "\tR. Contar el numero de Pedidos almacenados en el ABB cuyos "
-                "numeros de seguimiento son impares.\n";
-        cout << "\tT. Mostrar los Pedidos que se encuentran almacenados en un nodo "
-                "hoja.\n";
-        cout << "\tU. Eliminar un Pedido indicado por su numero de seguimiento "
-                "(que se pide desde consola) y mostrar el arbol "
-                "resultante tras la eliminacion de dicho Pedido.\n";
+        cout << "\tA. Generar 20 números de forma aleatoria y almacenarlos en las "
+                "Pilas.\n";
+        cout << "\tB. Mostrar el contenido de ambas pilas.\n";
+        cout << "\tC. Borrar el contenido de las pilas.\n";
+        cout << "\tD. Generar 20 aficionados a partir de las dos pilas y almacenarlas en un ABB.\n";
+        cout << "\tX. Dibuja el ABB generado.\n"
+        cout << "\E. Almacenar los aficionados del ABB en las listas (Se borrará el contenido de las listas).\n";
+        cout << "\tF. Mostrar los aficionados de las dos listas.\n";
+        cout << "\tG. Borrar el contenido de las dos listas.\n";
+        cout << "\tH. Insertar los aficionados en la cola (se borrará los datos de la cola).\n";
+        cout << "\tI. Mostrar los aficionados que hay en la cola.\n";
+        cout << "\tJ. Borrar el contenido de la cola.\n";
+        cout << "\tK. Mostrar los datos de los aficionados almacenados en el ABB, ordenados por sus IDs de menor a mayor.\n";
+        cout << "\tL. Mostrar los datos de los socios almacenados en el ABB, ordenados por sus IDs de menor a mayor.\n";
+        cout << "\tM. Mostrar los datos de los simpatizantes almacenados en el ABB, ordenados por sus IDs de menor a mayor.\n";
+        cout << "\tN. Mostrar el primero y el último socio y simpatizante en entrar (En ABB).\n";
+        cout << "\tO. Eliminar un aficionado, almacenado en el ABB, por su ID.\n";
+        cout << "\tP. Mostrar el primero y el último socio y simpatizante en entrar (En cola).\n";
+        cout << "\tR. Reiniciar el programa.\n";
         cout << "\tS. Salir.\n\n";
         cout << "\tIndique la opcion deseada: ";
         cin >> opcion;
@@ -59,58 +39,63 @@ int main(int argc, char** argv)
         system("cls");
         switch(opcion) {
         case 'A':
-            // gestor.llenaPilas();
+            gestor.llenarPilas();
             break;
         case 'B':
-            // gestor.muestraPilas();
+            gestor.mostrarPilas();
             break;
         case 'C':
-            // gestor.eliminaPilas();
+            gestor.borrarPilas();
             break;
         case 'D':
-            // gestor.generaArbol();
+            gestor.generarAficionados();
             break;
         case 'X':
-            // gestor.muestraArbol();
+            gestor.dibujarAbb();
             break;
         case 'E':
-            // gestor.enlistarAficionados();
+            gestor.insertarEnListas();
             break;
         case 'F':
-            // gestor.muestraListas();
+            gestor.mostrarListas();
             break;
         case 'G':
-            // gestor.borraListas();
+            gestor.borrarListas();
             break;
         case 'H':
-            // gestor.encolarAficionados();
+            gestor.insertarEnColas();
             break;
         case 'I':
-            // gestor.muestraCola();
+            gestor.mostrarColas();
             break;
         case 'J':
-            // gestor.borraCola();
+            gestor.borrarColas();
             break;
         case 'K':
-            // gestor.muestraAfiOrd();
+            gestor.mostrarAficionadosEnAbb();
             break;
         case 'L':
-            // gestor.muestraSociOrd();
+            gestor.mostrarSociosEnAbb();
             break;
         case 'M':
-            // gestor.muestraSimpOrd();
+            gestor.mostrarSimpEnAbb();
             break;
         case 'N':
-            // gestor.muestraArbol4();
+            gestor.mostrar4Abb();
             break;
         case 'O':
-            // gestor.eliminaAficionado();
+            cout << "Indique el ID del aficionado que desea eliminar: ";
+            cin >> dato;
+            
+            gestor.eliminarAficionadoEnAbb(dato);
+            
+            gestor.dibujarAbb();
             break;
         case 'P':
-            // gestor.muetraCola4();
+            gestor.mostrar4Cola();
             break;
         case 'R':
-            // gestor.reiniciar();
+            gestor.reiniciar();
             break;
         case 'S':
             cout << "Saliendo del programa...\n";

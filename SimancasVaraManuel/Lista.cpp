@@ -2,11 +2,12 @@
 
 Lista::Lista()
 {
+    lst = NULL;
 }
 
-void Lista::annadirAficionado(NodoLista *&lista, Aficionado a){
+void Lista::annadirAficionado(Aficionado a){
     NodoLista *nodo = new NodoLista(a);
-    NodoLista *aux1 = lista;
+    NodoLista *aux1 = lst;
     NodoLista *aux2;
     
     while((aux1 != NULL) && (aux1 -> aficionado.getLlegada() < a.getLlegada())){ //para mantener siempre ordenada nuestra lista
@@ -14,8 +15,8 @@ void Lista::annadirAficionado(NodoLista *&lista, Aficionado a){
         aux1 = aux1->siguiente;
     }
     
-    if(lista == aux1){ //se cumple siempre y cuando el elemento vaya al principio de la lista
-        lista = nodo;
+    if(lst == aux1){ //se cumple siempre y cuando el elemento vaya al principio de la lista
+        lst = nodo;
     } else{
         aux2->siguiente = nodo;
     }
@@ -23,25 +24,27 @@ void Lista::annadirAficionado(NodoLista *&lista, Aficionado a){
     nodo->siguiente = aux1;
 }
 
-void Lista::mostrarLista(NodoLista *lista){
-    NodoLista *actual = lista;
+void Lista::mostrarLista(){
+    NodoLista *actual = lst;
     while(actual!=NULL){
-        cout<<actual->aficionado.getID()<<" -> ";
+        cout << actual->aficionado.getID() << "es socio: " << (actual->aficionado.esSocioQ() ? "Sí" : "No") << " -> ";
         actual = actual->siguiente;
     }
     cout << "null" << endl;
 }
 
-void Lista::eliminarLista(NodoLista *&lista){
-    if(lista==NULL){
+void Lista::eliminarLista(){
+    if(lst==NULL){
         cout << "La lista ya está vacía" << endl;
     } else{
-        while (lista!=NULL){
-            NodoLista *aux_borrar = lista;
-            lista = lista->siguiente;
-            delete aux_borrar;
-        }
+        NodoLista *aux = lst;
+        lst = aux->siguiente;
+        delete aux;
     }
+}
+
+NodoLista *Lista::getLst(){
+    return lst;
 }
 
 Lista::~Lista()

@@ -13,6 +13,7 @@ private:
     Aficionado aficionado;
     NodoLista* siguiente;
     friend class Lista;
+    friend class Cola;
 
 };
 

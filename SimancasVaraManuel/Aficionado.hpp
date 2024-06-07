@@ -1,6 +1,8 @@
 #ifndef AFICIONADO_HPP
 #define AFICIONADO_HPP
 
+using namespace std;
+
 class Aficionado
 {
 public:
