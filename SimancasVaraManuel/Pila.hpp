@@ -1,6 +1,5 @@
 #ifndef PILA_HPP
 #define PILA_HPP
-#include "Aficionado.hpp"
 #include "NodoPila.hpp"
 
 using namespace std;
@@ -21,7 +20,6 @@ public:
 private:
     int dato;
     NodoPila *cima;
-    int numDatos;
 };
 
 #endif // PILA_HPP

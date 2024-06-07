@@ -27,7 +27,7 @@ void Lista::annadirAficionado(Aficionado a){
 void Lista::mostrarLista(){
     NodoLista *actual = lst;
     while(actual!=NULL){
-        cout << actual->aficionado.getID() << "es socio: " << (actual->aficionado.esSocioQ() ? "Sí" : "No") << " -> ";
+        cout << actual->aficionado.getID() << "es socio: " << (actual->aficionado.esSocioQ() ? "Si" : "No") << " -> ";
         actual = actual->siguiente;
     }
     cout << "null" << endl;
@@ -35,7 +35,7 @@ void Lista::mostrarLista(){
 
 void Lista::eliminarLista(){
     if(lst==NULL){
-        cout << "La lista ya está vacía" << endl;
+        cout << "La lista ya esta vacia" << endl;
     } else{
         NodoLista *aux = lst;
         lst = aux->siguiente;

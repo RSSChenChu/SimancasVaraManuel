@@ -42,18 +42,18 @@ NodoArbol *Arbol::insertarAficionadoAbb(NodoArbol *&arbol, Aficionado a, vector<
 }
 
 void Arbol::obtenerPyUSocio(){
-    cout << "El primer Socio en entrar fué " << ordenInsercionIzq.front().getID() << " a las 18:" << ordenInsercionIzq.front().getLlegada()
-    << " y el último fué " << ordenInsercionIzq.back().getID() << " a las 18:" << ordenInsercionIzq.back().getLlegada() <<  endl;
+    cout << "El primer Socio en entrar fue " << ordenInsercionIzq.front().getID() << " a las 18:" << ordenInsercionIzq.front().getLlegada()
+    << " y el ultimo fue " << ordenInsercionIzq.back().getID() << " a las 18:" << ordenInsercionIzq.back().getLlegada() <<  endl;
 }
 
 void Arbol::obtenerPyUSimp(){
-    cout << "El primer Socio en entrar fué " << ordenInsercionDer.front().getID() << " a las 18:" << ordenInsercionDer.front().getLlegada()
-    << " y el último fué " << ordenInsercionDer.back().getID() << " a las 18:" << ordenInsercionDer.back().getLlegada() <<  endl;
+    cout << "El primer Socio en entrar fue " << ordenInsercionDer.front().getID() << " a las 18:" << ordenInsercionDer.front().getLlegada()
+    << " y el ultimo fue " << ordenInsercionDer.back().getID() << " a las 18:" << ordenInsercionDer.back().getLlegada() <<  endl;
 }
 
 void Arbol::mostrarAbb(NodoArbol *arbol, int cont){ //La variable cont sirve únicamente para separar correctamente el arbol
     if (arbol == NULL){
-        cout << "El árbol está vacío" << endl;
+        cout << "El arbol esta vacio" << endl;
     } else{
         mostrarAbb(arbol->der, cont+1);
         for(int i = 0; i < cont; i++){ //este for es únicamente para apicar los espacios correspondientes

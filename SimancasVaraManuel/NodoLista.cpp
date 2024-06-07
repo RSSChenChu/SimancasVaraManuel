@@ -6,10 +6,6 @@ NodoLista::NodoLista(Aficionado a, NodoLista* sig)
     siguiente = sig;
 }
 
-Aficionado NodoLista::getAficionado(){
-    return aficionado;
-}
-
 NodoLista::~NodoLista()
 {
 }

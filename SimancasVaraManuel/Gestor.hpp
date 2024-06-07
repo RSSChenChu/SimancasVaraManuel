@@ -1,10 +1,11 @@
 #ifndef GESTOR_HPP
 #define GESTOR_HPP
+#include <cstdlib>
+#include <ctime>
 #include "Pila.hpp"
 #include "Cola.hpp"
 #include "Lista.hpp"
 #include "Arbol.hpp"
-#include "Aficionado.hpp"
 
 
 
@@ -39,7 +40,7 @@ private:
     
     Lista listaSocio;
     Lista listaSimp;
-    Arbol abb = *new Arbol();
+    Arbol abb;
     Cola cola;
     Pila pilaA;
     Pila pilaB;

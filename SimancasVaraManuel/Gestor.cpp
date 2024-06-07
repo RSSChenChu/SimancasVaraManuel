@@ -4,6 +4,12 @@ using namespace std;
 
 Gestor::Gestor()
 {
+    listaSocio = *new Lista();
+    listaSimp = *new Lista();
+    abb = *new Arbol();
+    cola = *new Cola();
+    pilaA = *new Pila();
+    pilaB = *new Pila();
 }
 
 void Gestor::llenarPilas(){

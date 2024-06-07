@@ -17,16 +17,21 @@ int main(int argc, char** argv)
         cout << "\tB. Mostrar el contenido de ambas pilas.\n";
         cout << "\tC. Borrar el contenido de las pilas.\n";
         cout << "\tD. Generar 20 aficionados a partir de las dos pilas y almacenarlas en un ABB.\n";
-        cout << "\tX. Dibuja el ABB generado.\n"
-        cout << "\E. Almacenar los aficionados del ABB en las listas (Se borrará el contenido de las listas).\n";
+        cout << "\tX. Dibuja el ABB generado.\n";
+        cout << "\tE. Almacenar los aficionados del ABB en las listas "
+                "(Se borrara el contenido de las listas).\n";
         cout << "\tF. Mostrar los aficionados de las dos listas.\n";
         cout << "\tG. Borrar el contenido de las dos listas.\n";
-        cout << "\tH. Insertar los aficionados en la cola (se borrará los datos de la cola).\n";
+        cout << "\tH. Insertar los aficionados en la cola "
+                "(se borrara los datos de la cola).\n";
         cout << "\tI. Mostrar los aficionados que hay en la cola.\n";
         cout << "\tJ. Borrar el contenido de la cola.\n";
-        cout << "\tK. Mostrar los datos de los aficionados almacenados en el ABB, ordenados por sus IDs de menor a mayor.\n";
-        cout << "\tL. Mostrar los datos de los socios almacenados en el ABB, ordenados por sus IDs de menor a mayor.\n";
-        cout << "\tM. Mostrar los datos de los simpatizantes almacenados en el ABB, ordenados por sus IDs de menor a mayor.\n";
+        cout << "\tK. Mostrar los datos de los aficionados almacenados en el ABB, "
+                "ordenados por sus IDs de menor a mayor.\n";
+        cout << "\tL. Mostrar los datos de los socios almacenados en el ABB, "
+                "ordenados por sus IDs de menor a mayor.\n";
+        cout << "\tM. Mostrar los datos de los simpatizantes almacenados en el ABB, "
+                "ordenados por sus IDs de menor a mayor.\n";
         cout << "\tN. Mostrar el primero y el último socio y simpatizante en entrar (En ABB).\n";
         cout << "\tO. Eliminar un aficionado, almacenado en el ABB, por su ID.\n";
         cout << "\tP. Mostrar el primero y el último socio y simpatizante en entrar (En cola).\n";

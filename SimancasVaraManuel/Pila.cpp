@@ -13,7 +13,7 @@ void Pila::insertarPila(int n){
 
 void Pila::mostrarPila(){
     if(cima==NULL){
-        cout << "La pila está vacía" << endl;
+        cout << "La pila esta vacia" << endl;
     } else{
         NodoPila *aux = cima;
         cout << "Los datos de la pila son los siguientes: ";

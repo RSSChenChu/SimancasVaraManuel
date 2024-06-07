@@ -27,7 +27,7 @@ void Cola::insertarEnCola(NodoLista *l){
 
 void Cola::mostrarCola(){
     if (primero==NULL){
-        cout << "La cola está vacía" << endl;
+        cout << "La cola esta vacia" << endl;
     } else{
         NodoCola *aux = primero;
         cout << "Los datos de la cola son los siguientes: ";

@@ -1,7 +1,7 @@
 #ifndef NODOCOLA_HPP
 #define NODOCOLA_HPP
 #include "Aficionado.hpp"
-#include <iostream>
+#include <cstddef>
 
 class NodoCola
 {
