@@ -18,10 +18,10 @@ void Pila::mostrarPila(){
         NodoPila *aux = cima;
         cout << "Los datos de la pila son los siguientes: ";
         while(aux!=NULL){
-            cout << dato << ", ";
+            cout << aux->valor << ", ";
             aux = aux->siguiente;
         }
-        cout << "." << endl;
+        cout << "fin" << endl;
     }
 }
 
@@ -33,8 +33,8 @@ void Pila::borrarPila(){
     }
 }
 
-int Pila::getCima(){
-    return cima->valor;
+int Pila::getDato(){
+    return dato;
 }
 
 int Pila::extraer(){

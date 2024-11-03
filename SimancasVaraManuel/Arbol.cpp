@@ -51,35 +51,126 @@ void Arbol::obtenerPyUSimp(){
     << " y el ultimo fue " << ordenInsercionDer.back().getID() << " a las 18:" << ordenInsercionDer.back().getLlegada() <<  endl;
 }
 
-void Arbol::mostrarAbb(NodoArbol *arbol, int cont){ //La variable cont sirve únicamente para separar correctamente el arbol
-    if (arbol == NULL){
-        cout << "El arbol esta vacio" << endl;
-    } else{
-        mostrarAbb(arbol->der, cont+1);
-        for(int i = 0; i < cont; i++){ //este for es únicamente para apicar los espacios correspondientes
-            cout << "     ";
-        }
-        cout << arbol->aficionado.getID() << "|" << arbol->aficionado.getLlegada() << endl; //Se imprimirá de la siguiente forma: id|llegada
-        mostrarAbb(arbol->izq, cont+1);
+void Arbol::pintar()
+{
+    pintarArbol(raiz);
+    cout << '\n';
+}
+
+void Arbol::pintarArbol(NodoArbol *nodo){
+    if(!nodo)
+        return;
+    pintarArbol(nodo->izq);
+    cout << nodo->aficionado.getID() << " ";
+    pintarArbol(nodo->der);
+}
+
+int Arbol::altura(NodoArbol *nodo){
+    if(!nodo)
+        return 0;
+    return 1 + max(altura(nodo->izq), altura(nodo->der));
+}
+
+void Arbol::dibujarNodo(vector<string>& output, vector<string>& linkAbove, NodoArbol *nodo, int nivel, int p, char linkChar){
+    if(!nodo)
+        return;
+
+    int h = output.size();
+    string SP = " ";
+
+    if(p < 0) {
+        string extra(-p, ' ');
+        for(string& s : output)
+            if(!s.empty())
+                s = extra + s;
+        for(string& s : linkAbove)
+            if(!s.empty())
+                s = extra + s;
     }
+    if(nivel < h - 1)
+        p = max(p, (int)output[nivel + 1].size());
+    if(nivel > 0)
+        p = max(p, (int)output[nivel - 1].size());
+    p = max(p, (int)output[nivel].size());
+
+    if(nodo->izq) {
+        int num = nodo->izq->aficionado.getID(); 
+        string izqdato = SP + to_string(num) + SP;
+        dibujarNodo(output, linkAbove, nodo->izq, nivel + 1, p - izqdato.size(), 'L');
+        p = max(p, (int)output[nivel + 1].size());
+    }
+
+    int space = p - output[nivel].size();
+    if(space > 0)
+        output[nivel] += string(space, ' ');
+    int num = nodo->aficionado.getID();
+    string nododato = SP + to_string(num) + SP;
+    output[nivel] += nododato;
+
+    space = p + SP.size() - linkAbove[nivel].size();
+    if(space > 0)
+        linkAbove[nivel] += string(space, ' ');
+    linkAbove[nivel] += linkChar;
+
+    if(nodo->der)
+        dibujarNodo(output, linkAbove, nodo->der, nivel + 1, output[nivel].size(), 'R');
+}
+
+void Arbol::dibujar(){
+    int h = altura(raiz);
+    vector<string> output(h), linkAbove(h);
+    dibujarNodo(output, linkAbove, raiz, 0, 5, ' ');
+
+    for(int i = 1; i < h; i++) {
+        for(int j = 0; j < linkAbove[i].size(); j++) {
+            if(linkAbove[i][j] != ' ') {
+                int size = output[i - 1].size();
+                if(size < j + 1)
+                    output[i - 1] += string(j + 1 - size, ' ');
+                int jj = j;
+                if(linkAbove[i][j] == 'L') {
+                    while(output[i - 1][jj] == ' ')
+                        jj++;
+                    for(int k = j + 1; k < jj - 1; k++)
+                        output[i - 1][k] = '_';
+                } else if(linkAbove[i][j] == 'R') {
+                    while(output[i - 1][jj] == ' ')
+                        jj--;
+                    for(int k = j - 1; k > jj + 1; k--)
+                        output[i - 1][k] = '_';
+                }
+                linkAbove[i][j] = '|';
+            }
+        }
+    }
+
+    cout << '\n' << '\n';
+    for(int i = 0; i < h; i++) {
+        if(i)
+            cout << linkAbove[i] << '\n';
+        cout << output[i] << '\n';
+    }
+    cout << '\n' << '\n';
 }
 
 list<Aficionado> Arbol::recorrerIzq(NodoArbol *arbol){
     list<Aficionado> listIzq;
-    if(arbol){
-        list<Aficionado> izquierda = recorrerIzq(arbol->izq);
-        listIzq.splice(listIzq.end(), izquierda);
-        listIzq.push_back(arbol->aficionado);
+    NodoArbol *socio = raiz->izq;
+    if(socio){
+        recorridoInorden(socio->izq);
+        listIzq.push_back(socio->aficionado);
+        recorridoInorden(socio->der);
     }
     return listIzq;
 }
 
 list<Aficionado> Arbol::recorrerDer(NodoArbol *arbol){
     list<Aficionado> listDer;
-    if(arbol){ //Recorrido del subárbol izquierdo en inorden
-        list<Aficionado> derecha = recorrerIzq(arbol->der);
-        listDer.splice(listDer.end(), derecha); //Agregamos los valores del subárbol izq a la lista
-        listDer.push_back(arbol->aficionado); //Agregamos el nodo actual
+    NodoArbol *simp = raiz->der;
+    if(simp){
+        recorridoInorden(simp->izq);
+        listDer.push_back(simp->aficionado);
+        recorridoInorden(simp->der);
     }
     return listDer;
 }

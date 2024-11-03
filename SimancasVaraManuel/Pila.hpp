@@ -12,7 +12,7 @@ public:
     void insertarPila(int);
     void mostrarPila();
     void borrarPila();
-    int getCima();
+    int getDato();
     int extraer();
     
     ~Pila();

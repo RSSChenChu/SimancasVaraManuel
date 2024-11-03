@@ -13,7 +13,11 @@ public:
     Arbol();
     void insertarAf(Aficionado);
     NodoArbol *insertarAficionadoAbb(NodoArbol *&, Aficionado, vector<Aficionado>);
-    void mostrarAbb(NodoArbol *, int);
+    void pintar();
+    void pintarArbol(NodoArbol *);
+    int altura(NodoArbol *);
+    void dibujarNodo(vector<string>& output, vector<string>& linkAbove, NodoArbol *nodo, int nivel, int p, char linkChar);
+    void dibujar();
     list<Aficionado> recorrerIzq(NodoArbol *);
     list<Aficionado> recorrerDer(NodoArbol *);
     void reestablecerArbol(NodoArbol *&);

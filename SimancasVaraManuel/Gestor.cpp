@@ -13,19 +13,21 @@ Gestor::Gestor()
 }
 
 void Gestor::llenarPilas(){
-    if((pilaA.getCima() != NULL) || (pilaB.getCima() != NULL)){
-        borrarPilas();
-    } else{
-        srand(time(0)); //Inicializamos el generador de número aleatorios basada en el tiempo actual para que no se repitan
-        for(int i = 0; i < 20; ++i){
-            int n = rand() % 100 + 1; //Generamos un número entre 1 a 100
-            pilaA.insertarPila(n);
-        }
+    if((pilaA.getDato() != NULL) || (pilaB.getDato() != NULL)){
+        pilaA.borrarPila();
+        pilaB.borrarPila();
+    }
         
-        for(int i = 0; i < 20; ++i){
-            int n = rand() % 60; //Generamos un número entre 0 a 59
-            pilaB.insertarPila(n);
-        }
+    srand(time(0)); //Inicializamos el generador de número aleatorios basada en el tiempo actual para que no se repitan
+    
+    for(int i = 0; i < 20; ++i){
+        int n = (rand() % 100) + 1; //Generamos un número entre 1 a 100
+        pilaA.insertarPila(n);
+    }
+    
+    for(int i = 0; i < 20; ++i){
+        int m = (rand() % 60); //Generamos un número entre 0 a 59
+        pilaB.insertarPila(m);
     }
 }
 
@@ -45,12 +47,16 @@ void Gestor::generarAficionados(){
         af.setID(pilaA.extraer());
         af.setLlgada(pilaB.extraer());
         
+        cout << af.getID() << " - ";
+        
         abb.insertarAf(af);
     }
 }
 
 void Gestor::dibujarAbb(){
-    abb.mostrarAbb(abb.getRaiz(), 0);
+    
+    abb.dibujar();
+    
 }
 
 void Gestor::insertarEnListas(){

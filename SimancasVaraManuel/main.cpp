@@ -6,13 +6,13 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-    Gestor gestor;
+    Gestor gestor = *new Gestor();
     char opcion;
     int dato;
     do {
         cout << "\n\t--------------------------------------------------------------"
                 "--------\n";
-        cout << "\tA. Generar 20 números de forma aleatoria y almacenarlos en las "
+        cout << "\tA. Generar 20 numeros de forma aleatoria y almacenarlos en las "
                 "Pilas.\n";
         cout << "\tB. Mostrar el contenido de ambas pilas.\n";
         cout << "\tC. Borrar el contenido de las pilas.\n";
@@ -32,9 +32,9 @@ int main(int argc, char** argv)
                 "ordenados por sus IDs de menor a mayor.\n";
         cout << "\tM. Mostrar los datos de los simpatizantes almacenados en el ABB, "
                 "ordenados por sus IDs de menor a mayor.\n";
-        cout << "\tN. Mostrar el primero y el último socio y simpatizante en entrar (En ABB).\n";
+        cout << "\tN. Mostrar el primero y el ultimo socio y simpatizante en entrar (En ABB).\n";
         cout << "\tO. Eliminar un aficionado, almacenado en el ABB, por su ID.\n";
-        cout << "\tP. Mostrar el primero y el último socio y simpatizante en entrar (En cola).\n";
+        cout << "\tP. Mostrar el primero y el ultimo socio y simpatizante en entrar (En cola).\n";
         cout << "\tR. Reiniciar el programa.\n";
         cout << "\tS. Salir.\n\n";
         cout << "\tIndique la opcion deseada: ";
